@@ -171,6 +171,14 @@ button {
   z-index: 10;
 }
 
+.card-relative {
+  position: relative;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3),
+  -5px -5px 15px rgba(255, 255, 255, 0.1);
+border-radius: 15px 0 15px 0;
+margin: 20px;
+transition: 0.5s;
+}
 /* загальне */
 
 /* navbar */
@@ -365,16 +373,16 @@ nav .logo {
 .AboutUs .text {
   width: 550px;
   padding: 25px;
-  border-radius: 5px;
 }
 .AboutUs .text p {
   padding: 15px;
 }
-
+.riding-text p{
+  font-size: 30px;
+}
 .AboutUs .riding-text {
   margin: auto;
   width: 100%;
-  font-size: 30px;
   text-align: center;
   padding-top: 150px;
 }
@@ -383,22 +391,9 @@ nav .logo {
 }
 
 
-
-
-.card-relative {
-
-  position: relative;
-  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3),
-  -5px -5px 15px rgba(255, 255, 255, 0.1);
-border-radius: 15px 0 15px 0;
-margin: 20px;
-transition: 0.5s;
-}
-
 .riding-text .card-relative {
   min-width: 300px;
-  height: 350px;
- 
+  height: 350px; 
 }
 
 .riding-text .box {
@@ -425,24 +420,14 @@ transition: 0.5s;
 
 .riding-text .content h3 {
   font-size: 1.8rem;
-  color: var(--title);
-  z-index: 10;
   margin-bottom: 15px;
   margin-top: 25px;
 }
 
 .riding-text .content p {
   font-size: 1rem;
-  font-weight: 300;
-  color: var(--t-main);
-  z-index: 10;
-
   text-indent: 0px;
 }
-
-
-
-
 
 /* aboutUs */
 
@@ -470,22 +455,21 @@ transition: 0.5s;
 }
 
 .Products .content {
-  padding: 100px 0;
+  padding: 80px 0px;
   text-align: center;
 }
 
 .Products h3 {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 2.5rem;
+  top: 20px;
+  width: 80%;
+  font-size: 2rem;
   text-align: center;
-  color: var(--title);
 }
 
 .Products .text {
   margin-top: 50px;
   padding-top: 100px;
+  margin-left: 150px;
   width: 50%;
 }
 
@@ -495,21 +479,27 @@ transition: 0.5s;
   filter: invert(0.8);
 }
 .Products .galary {
-  left: 750px;
+  left: 650px;
 }
 
 /* Продукція */
 
 /* Фракційний склад */
 .sheben {
-  height: 1000px;
   box-shadow: -1px -13px 28px 11px rgba(34, 60, 80, 0.2);
   background-color: var(--main);
+  padding-bottom: 150px;
+  position: relative;
+  min-height: 700px;
 }
 
 .sheben .text {
-  width: 55%;
+  width: 100%;
+  margin-left: 500px;
+  margin-right: 5%;
+  margin-top: 100px; 
 }
+
 
 .table-sheben {
   color: var(--white);
@@ -526,6 +516,7 @@ transition: 0.5s;
 }
 
 .sheben .galary-container {
+  position: absolute;
   top: 250px;
   left: -100px;
 }
@@ -577,9 +568,7 @@ transition: 0.5s;
   border-radius: 15px 0px 15px 0px;
   width: 500px;
 }
-.reports a {
-  color: var(--t-main);
-}
+
 /* фінансові звіти */
 .FinZvit{
   padding-bottom: 150px;
@@ -600,7 +589,10 @@ transition: 0.5s;
   border-radius: 15px 0 15px 0;
   transition: 0.5s;
 }
-
+.FinZvit a{
+  font-size: 16px;
+  text-indent: 0;
+}
 .FinZvit .card:hover .box {
   transform: translateY(-25px);
 }
